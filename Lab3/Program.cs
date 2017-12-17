@@ -7,7 +7,7 @@ namespace Lab3
     public static void Main(string[] args)
     {
       var port = Console.ReadLine();
-      var server = new Server(string.Format("http://127.0.0.1:{0}/", port));
+      var server = new Server($"http://127.0.0.1:{port}/");
       server.Start();
     }
   }
